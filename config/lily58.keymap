@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        PCsleep: PCsleep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+            label = "PCSLEEP";
+            wait-ms = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,11 +50,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp K_SLEEP  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                 &trans           &trans           &trans           &trans    &trans    &tog 3
-&trans       &trans        &trans        &trans        &trans        &trans                                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &trans    &trans
-&trans       &trans        &trans        &trans        &trans        &trans                                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LPAR  &kp RPAR  &kp TILDE
-&trans       &trans        &trans        &trans        &trans        &trans        &bt BT_CLR    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LBRC  &kp RBRC  &kp PIPE
-                                         &trans        &trans        &trans        &trans        &kp KP_NUMBER_0  &trans           &trans           &trans
+&PCsleep  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                 &trans           &trans           &trans           &trans    &trans    &tog 3
+&trans    &trans        &trans        &trans        &trans        &trans                                       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &trans    &trans
+&trans    &trans        &trans        &trans        &trans        &trans                                       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LPAR  &kp RPAR  &kp TILDE
+&trans    &trans        &trans        &trans        &trans        &trans        &bt BT_CLR    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LBRC  &kp RBRC  &kp PIPE
+                                      &trans        &trans        &trans        &trans        &kp KP_NUMBER_0  &trans           &trans           &trans
             >;
         };
 
