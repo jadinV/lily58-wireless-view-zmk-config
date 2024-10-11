@@ -77,13 +77,12 @@
         };
 
         gaming_layer {
-            display-name = "Game";
             bindings = <
-&kp ESC  &kp N1     &kp N2  &kp N3    &kp N4  &kp N5                          &trans  &trans  &trans  &trans  &trans  &tog 3
-&kp N6   &kp TAB    &kp Q   &kp W     &kp E   &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp N7   &kp LSHFT  &kp A   &kp S     &kp D   &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp N8   &kp LCTRL  &kp Z   &kp X     &kp C   &kp V   &kp N9       &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp LALT  &kp N9  &kp N0  &kp SPACE    &kp ENTER  &trans  &trans  &trans
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                          &trans  &trans  &trans  &trans  &trans  &tog 3
+&kp TAB  &kp Q   &kp W   &kp E   &kp R     &kp T                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp A    &kp A   &kp S   &kp D   &kp F     &kp G                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp N8   &kp Z   &kp X   &kp C   &kp V     &kp B      &kp H     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp N9  &kp LALT  &kp SPACE  &kp N0    &kp ENTER  &trans  &trans  &trans
             >;
         };
     };
