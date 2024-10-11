@@ -77,6 +77,7 @@
         };
 
         gaming_layer {
+            display-name = "Game";
             bindings = <
 &kp ESC  &kp N1     &kp N2  &kp N3    &kp N4  &kp N5                          &trans  &trans  &trans  &trans  &trans  &tog 3
 &kp N6   &kp TAB    &kp Q   &kp W     &kp E   &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
