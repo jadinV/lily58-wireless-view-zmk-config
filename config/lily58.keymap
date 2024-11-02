@@ -13,7 +13,11 @@
         PCsleep: PCsleep {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LG(X) &kp U &kp S>;
+            bindings =
+                <&macro_tap>,
+                <&macro_wait_time 3>,
+                <&kp LG(X) &kp U &kp S>;
+
             label = "PCSLEEP";
             wait-ms = <2>;
         };
