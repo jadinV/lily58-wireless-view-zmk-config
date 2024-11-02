@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     macros {
@@ -20,6 +21,22 @@
 
             label = "PCSLEEP";
             wait-ms = <2>;
+        };
+
+        deleteLine: deleteLine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_SHIFT &kt HOME &kp DELETE &kt HOME &kt LEFT_SHIFT>;
+            label = "DELETELINE";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        deleteLine {
+            bindings = <&deleteLine>;
+            key-positions = <56 50>;
         };
     };
 
