@@ -70,11 +70,11 @@
 
             display-name = "Lower";
             bindings = <
-&PCsleep  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                 &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none     &tog 3
-&none     &none         &none         &none         &none         &none                                        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none     &none
-&none     &none         &none         &none         &none         &none                                        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LPAR      &kp RPAR  &none
-&none     &none         &none         &none         &none         &none         &bt BT_CLR    &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LBRC      &kp RBRC  &kp PIPE
-                                      &none         &none         &none         &none         &kp KP_NUMBER_0  &none            &none            &none
+&PCsleep  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                   &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none     &tog 3
+&none     &none         &none         &none         &none         &none                                          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none     &none
+&none     &none         &none         &none         &none         &none                                          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LPAR      &kp RPAR  &none
+&none     &none         &none         &none         &none         &none         &bt BT_CLR      &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LBRC      &kp RBRC  &kp PIPE
+                                      &none         &none         &none         &kp KP_EQUAL    &kp KP_NUMBER_0  &none            &none            &none
             >;
         };
 
@@ -117,16 +117,10 @@
             >;
         };
 
-        extra_1 {
-            status = "reserved";
-        };
+        extra_1 { status = "reserved"; };
 
-        extra_2 {
-            status = "reserved";
-        };
+        extra_2 { status = "reserved"; };
 
-        extra_3 {
-            status = "reserved";
-        };
+        extra_3 { status = "reserved"; };
     };
 };
